@@ -1,7 +1,12 @@
 # HufConCalc
-Simple Console Calculator
+Simple Console Calculator  
+  
+Simple Source Code  
+Simple Program  
+Simple Project  
+It's so simple
 ### Simple Calculator
-Really simple calculator
+Really simple calculator  
 Only four operations are supported
 ## Compile Command
 ### GCC
