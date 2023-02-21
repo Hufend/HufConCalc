@@ -1,6 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../../Library/basic.h"
+/* 因为我的很多软件都会用到同样的几个函数
+ * 所以我把这些函数放到了DLL里
+ * 以下的 compare toCharacterLength 函数是我到DLL里复制过来的
+ */
+int compare(const void*,const void*,const int);
+int toCharacterLength(const char*);
+int compare(const void* target,const void* value,const int size){
+	for(int length = 0;length < size;length++) if(*(char*)(target + length) != *(char*)(value + length)) return 0;
+	return 1;
+}
+int toCharacterLength(const char* character){
+	int length = 0;
+	while(character[length] != '\0') length++;
+	return length;
+}
 FILE* file;
 double power(double,int);
 double calculation();
@@ -139,8 +153,6 @@ double calculation(){
 		exit(0);
 }
 int main(){
-	system("title Calculator运算");
-	printf("欢迎使用Calculator运算\n");
 	fopen_s(&file,"./calculate.log","a");
 	double result;
 	calculate:
