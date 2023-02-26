@@ -1,9 +1,9 @@
 # HufConCalc
 [English](https://github.com/Hufend/HufConCalc/blob/main/README.md) | 简体中文
 ## 介绍
-简单的控制台计算器
-简单的源代码
-简单的程序
+简单的控制台计算器  
+简单的源代码  
+简单的程序  
 简单的项目
 
 就是如此的简单
