@@ -1,19 +1,64 @@
 # HufConCalc
 [English](https://github.com/Hufend/HufConCalc/blob/main/README.md) | 简体中文
-## 介绍
+
+介绍
+--------------
 简单的控制台计算器  
 简单的源代码  
 简单的程序  
 简单的项目
 
 就是如此的简单
-### Simple Calculator
-真的是简易计算器  
-只支持四则运算
-### The TRUE Calculator
+
+Simple Calculator
+--------------
+真的就是个简易计算器  
+只支持四则运算  
+但支持括号
+
+### 用法
+
+由于作者的编程水平低下，所以运算符号的后边一定要加空格  
+例如：
+
+	8* 2+ ( 9- 3) / 2+ 1=
+	20.000000
+
+为了美观一般会写成以下形式
+
+	8 * 2 + ( 9 - 3 ) / 2 + 1 =
+	20.000000
+
+当然还有几种**特别**的写法  
+
+因为我~~局域网~~懒  
+所以程序中的算式可以是等号前无限换行、大中小括号乱用  
+例如：
+
+	8
+	*
+	2 + (
+	9 -
+	3 ) /
+	2
+	+ 1 =
+	20.000000
+
+	9 * ( 8 + { 6 * { 7 * 9 - 2 ) + [ 6 + 3 * 3 ) - 81 ] - 306 } =
+	18.000000
+
+这样的写法也是可以的  
+~~你开心就好~~
+
+The TRUE Calculator
+--------------
 还没开发好  
-~~也许~~将要来临
-## 编译命令
+~~也许~~即将来临
+
+编译命令
+--------------
 ### GCC
-gcc ./Simple-Calculator.c -fexec-charset=GBK -o ./Simple-Calculator.exe  
-> -fexec-charset的值可根据自身终端的编码改变
+
+	gcc ./Simple-Calculator.c -fexec-charset=GBK -o ./Simple-Calculator.exe
+
+`-fexec-charset`的值可根据自身终端的编码改变
